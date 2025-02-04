@@ -1,16 +1,31 @@
-## Hi there 👋
+```rust
 
-<!--
-**jus7-a-v01d/jus7-a-v01d** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+pub mod README {
+  impl jus7-a-v01d {
+    pub fn introduce_self() -> Self {
+      jus7-a-v01d{
+        name: "Void",
+        age: 20,
+        motiv: vec![Motivation::getExperience, Motivation::writeBetterCode],
+        curr_os: Os::Debian,
+      }
+    }
 
-Here are some ideas to get you started:
+    pub fn print_goals(&self) {
+      println!("Learn about kernel modues and operating systems");
+      println!("Find the perfect vimrc");
+    }  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    pub fn opinion_on_language(lang: &str) -> Result<(), String> {
+      match lang {
+        "Rust" => Ok(()),
+        "C++" => Ok(()),
+        "Bash" => Ok(()),
+        "C" => Err(String::from("Not enough practice")),
+        "Python" => panic!("god please no"),
+        _ => Err(String::from(" ¯\_(ツ)_/¯")),
+      }
+    }
+  }
+}
+```
