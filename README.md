@@ -4,7 +4,7 @@ pub mod README {
   impl jus7-a-v01d {
     pub fn introduce_self() -> Self {
       jus7-a-v01d{
-        name: "Void",
+        name: String::from("Void"),
         age: 20,
         motiv: vec![Motivation::getExperience, Motivation::writeBetterCode],
         curr_os: Os::Debian,
