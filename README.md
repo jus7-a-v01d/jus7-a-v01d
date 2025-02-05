@@ -23,7 +23,7 @@ pub mod README {
         "Bash" => Ok(()),
         "C" => Err(String::from("Not enough practice")),
         "Python" => panic!("god please no"),
-        _ => Err(String::from(" ¯\_(ツ)_/¯")),
+        _ => Err(String::from(r" ¯\_(ツ)_/¯")),
       }
     }
   }
