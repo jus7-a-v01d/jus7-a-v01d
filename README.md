@@ -12,11 +12,11 @@ pub mod README {
     }
 
     pub fn print_goals(&self) {
-      println!("Learn about kernel modues and operating systems");
+      println!("Learn about kernel modules and operating systems");
       println!("Find the perfect vimrc");
     }  
 
-    pub fn opinion_on_language(lang: &str) -> Result<(), String> {
+    pub fn opinion_on_language(&self, lang: &str) -> Result<(), String> {
       match lang {
         "Rust" => Ok(()),
         "C++" => Ok(()),
