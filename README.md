@@ -5,7 +5,7 @@ pub mod README {
     pub fn introduce_self() -> Self {
       jus7-a-v01d{
         name: String::from("Void"),
-        age: 20,
+        age: 21,
         motiv: vec![Motivation::getExperience, Motivation::writeBetterCode],
         curr_os: Os::Debian,
       }
@@ -22,6 +22,7 @@ pub mod README {
         "C++" => Ok(()),
         "Bash" => Ok(()),
         "C" => Err(String::from("Not enough practice")),
+        "Typescript" => Err(String::from("Do not like")),
         "Python" => panic!("god please no"),
         _ => Err(String::from(r" ¯\_(ツ)_/¯")),
       }
